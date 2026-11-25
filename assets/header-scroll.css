@@ -1,0 +1,6 @@
+.header{position:fixed;top:0;left:0;right:0;z-index:100;background:#fffaf1;transition:transform .32s cubic-bezier(.22,1,.36,1),box-shadow .25s ease;will-change:transform}
+.header.header-scrolled{box-shadow:0 5px 22px rgba(24,33,54,.08)}
+.header.header-hidden{transform:translateY(-110%);box-shadow:none}
+body[class^="page-"]{padding-top:86px}
+@media(max-width:600px){body[class^="page-"]{padding-top:68px}}
+@media(prefers-reduced-motion:reduce){.header{transition:none}}
